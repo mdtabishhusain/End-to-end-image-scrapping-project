@@ -1,0 +1,131 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.3:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/config/workspace/main.py", line 15, in homepage
+    return render_template("index.html")
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/config/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/config/workspace/templates/index.html", line 9, in template
+    {% blockbody %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'blockbody'.
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:26:23] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:26:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.3:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:32:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:32:04] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:32:04] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:root:name 'save_dir' is not defined
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:32:09] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.3:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:32:43] "GET /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:32:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:32:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:root:name 'save_dir' is not defined
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:32:45] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.3:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:33:43] "GET /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:33:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:33:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:33:48] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.3:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:34:19] "GET /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:34:19] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:34:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:34:32] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.3:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:48:27] "GET /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:48:27] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:48:27] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:48:44] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:49:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:49:06] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:49:06] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+INFO:root:[Errno 2] No such file or directory: 'images/https://orange-mechanic-gccly.pwskills.app/?_0.jpg'
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:49:10] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.3:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:50:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:50:27] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:50:27] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:50:35] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.3:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:52:26] "GET /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:52:26] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:52:26] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:52:34] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.3:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:53:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:53:40] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:53:40] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.3:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:54:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:54:51] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:54:51] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.3:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:58:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:58:47] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:58:47] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [27/Aug/2023 10:58:54] "POST /review HTTP/1.1" 200 -
