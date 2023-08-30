@@ -29,7 +29,7 @@ def index():
                 os.makedirs(save_dir)
 
             headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"}
-            response = requests.get(f"https://www.google.com/search?q={query}&sxsrf=AB5stBg-UqbcoWxswoz2kG_H4PbO-c2K2Q:1693102839810&q=feroze+gandhi+institute+of+engineering+and+technology&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjq3dbK4_uAAxVFS2wGHaL7AyEQ0pQJegQICxAB&biw=864&bih=618&dpr=1")
+            response = requests.get(f"https://www.google.com/search?q=&sxsrf=AB5stBg-UqbcoWxswoz2kG_H4PbO-c2K2Q:1693102839810&q={query}&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjq3dbK4_uAAxVFS2wGHaL7AyEQ0pQJegQICxAB&biw=864&bih=618&dpr=1")
             soup = BeautifulSoup(response.content,features="html.parser")
             images_tags = soup.find_all("img")
             del images_tags[0]
@@ -57,3 +57,5 @@ def index():
 
 if __name__ == "__main__":
     app.run(host='172.18.0.12', port=8000, debug=True)
+
+
